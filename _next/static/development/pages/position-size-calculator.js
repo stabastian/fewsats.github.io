@@ -11698,7 +11698,7 @@ function (_Component) {
         result.isLong = isLong;
         result.riskReward = riskReward;
         result.positionSizeBTC = positionSizeBTC;
-        result.gain = new big_js__WEBPACK_IMPORTED_MODULE_16___default.a(riskReward).times(new big_js__WEBPACK_IMPORTED_MODULE_16___default.a(positionSizeBTC)).toFixed(8);
+        result.gain = new big_js__WEBPACK_IMPORTED_MODULE_16___default.a(riskReward).times(new big_js__WEBPACK_IMPORTED_MODULE_16___default.a(riskAmount)).toFixed(8);
         result.riskAmount = riskAmount;
         result.distanceToStop = distanceToStop;
         return result;
@@ -11736,7 +11736,7 @@ function (_Component) {
         description: "Position Size Calculator for Bitcoin and Altcoins",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 189
         },
         __self: this
       }, __jsx("div", {
@@ -11746,27 +11746,27 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 192
         },
         __self: this
       }, __jsx("h1", {
         className: "text-3xl text-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 193
         },
         __self: this
       }, "Position size calculator"), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 196
+          lineNumber: 194
         },
         __self: this
       }, __jsx("div", {
         className: "mt-8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 197
+          lineNumber: 195
         },
         __self: this
       }, __jsx(_components_select__WEBPACK_IMPORTED_MODULE_20__["default"], {
@@ -11775,7 +11775,7 @@ function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 198
+          lineNumber: 196
         },
         __self: this
       }, pairs.map(function (el) {
@@ -11784,7 +11784,7 @@ function (_Component) {
           value: el.key,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 203
+            lineNumber: 201
           },
           __self: this
         }, el.value);
@@ -11792,7 +11792,7 @@ function (_Component) {
         className: "mt-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 207
         },
         __self: this
       }, __jsx("table", {
@@ -11803,13 +11803,13 @@ function (_Component) {
         }, 'border-l-2 shadow-xl table-fixed w-full mt-2'),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 208
         },
         __self: this
       }, __jsx("tbody", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 214
         },
         __self: this
       }, __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11820,7 +11820,7 @@ function (_Component) {
         tip: "This is your total account balance.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 215
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11831,7 +11831,7 @@ function (_Component) {
         tip: "Percentage of acceptable risk.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 224
+          lineNumber: 222
         },
         __self: this
       }), pair === 'ETHUSD' && __jsx(react__WEBPACK_IMPORTED_MODULE_15___default.a.Fragment, null, __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11842,7 +11842,7 @@ function (_Component) {
         tip: "Spot ETH price ($)",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 231
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11852,7 +11852,7 @@ function (_Component) {
         tip: "ETH/USD perpetual contract value.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 238
         },
         __self: this
       })), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11863,7 +11863,7 @@ function (_Component) {
         tip: "Position entry price.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 246
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11874,7 +11874,7 @@ function (_Component) {
         tip: "Stop-Loss price.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 253
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11885,7 +11885,7 @@ function (_Component) {
         tip: "Take Profit price.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 262
+          lineNumber: 260
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11895,7 +11895,7 @@ function (_Component) {
         tip: "Maximum loss in case the Stop-Loss gets hit.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 267
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11905,25 +11905,25 @@ function (_Component) {
         tip: __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 280
+            lineNumber: 278
           },
           __self: this
         }, __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 281
+            lineNumber: 279
           },
           __self: this
         }, "Difference between Entry price and Stop-Loss."), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 282
+            lineNumber: 280
           },
           __self: this
         }, "Expressed in percentage.")),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 275
+          lineNumber: 273
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11933,59 +11933,59 @@ function (_Component) {
         tip: __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 291
+            lineNumber: 289
           },
           __self: this
         }, __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 292
+            lineNumber: 290
           },
           __self: this
         }, "Position size expressed in BTC."), __jsx("div", {
           className: "mt-1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 293
+            lineNumber: 291
           },
           __self: this
         }, "Calculated with the following formula:"), __jsx("div", {
           className: "underline",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 296
+            lineNumber: 294
           },
           __self: this
         }, "Position Size = Risk Amount/Distance to Stop"), __jsx("div", {
           className: "mt-1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 299
+            lineNumber: 297
           },
           __self: this
         }, "Assuming an account of 1 BTC."), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 302
+            lineNumber: 300
           },
           __self: this
         }, "A risk of 5% per trade."), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 303
+            lineNumber: 301
           },
           __self: this
         }, "A 10% distance from the entry to the Stop-Loss."), __jsx("div", {
           className: "underline",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 306
+            lineNumber: 304
           },
           __self: this
         }, "Position Size = (1 BTC x 0.05)/0.1 = 0.5 BTC")),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 286
+          lineNumber: 284
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -11996,45 +11996,45 @@ function (_Component) {
         tip: __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 318
+            lineNumber: 316
           },
           __self: this
         }, __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 319
+            lineNumber: 317
           },
           __self: this
         }, "Position size expressed in USD or $ALT."), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 320
+            lineNumber: 318
           },
           __self: this
         }, "On BitMEX it corresponds to the amount of contracts to buy."), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 324
+            lineNumber: 322
           },
           __self: this
         }, "For $ALTS it corresponds to the amount to buy."), __jsx("div", {
           className: "mt-1",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 327
+            lineNumber: 325
           },
           __self: this
         }, "Calculated with the following formula:"), __jsx("div", {
           className: "underline",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 330
+            lineNumber: 328
           },
           __self: this
         }, "Position Size = Entry price * Position Size in BTC")),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 312
+          lineNumber: 310
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -12044,17 +12044,17 @@ function (_Component) {
         tip: "Risk/Reward Ratio.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 336
+          lineNumber: 334
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_19__["default"], {
-        label: "Potential gain",
+        label: "Potential Gain",
         value: gain,
         readOnly: true,
         tip: "Realised gain in case of Take Profit.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 342
+          lineNumber: 340
         },
         __self: this
       })))))));
