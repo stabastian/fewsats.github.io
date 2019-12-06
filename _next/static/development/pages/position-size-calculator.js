@@ -96,7 +96,7 @@ var CalculatorRow = function CalculatorRow(_ref) {
     },
     __self: this
   }, label))), __jsx("td", {
-    className: "p-0 w-1/3 border border-highlight",
+    className: "p-1 w-1/3 border border-highlight",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
