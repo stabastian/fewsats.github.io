@@ -626,12 +626,26 @@ function (_Component) {
           lineNumber: 191
         },
         __self: this
-      }, "with \u2764\uFE0Fby"), __jsx("a", {
+      }, "with "), __jsx("span", {
+        role: "img",
+        "aria-label": "love",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 192
+        },
+        __self: this
+      }, "\u2764\uFE0F"), __jsx("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 195
+        },
+        __self: this
+      }, "by"), __jsx("a", {
         className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
         href: "https://twitter.com/fewsats",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
+          lineNumber: 196
         },
         __self: this
       }, "@fewsats"))));
@@ -13071,7 +13085,7 @@ module.exports = g;
 /*! exports provided: name, version, description, main, repository, scripts, keywords, author, license, dependencies, devDependencies, husky, lint-staged, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"trading\",\"version\":\"1.0.0\",\"description\":\"\",\"main\":\"index.js\",\"repository\":\"https://github.com/fewsats/trading-tools.git\",\"scripts\":{\"dev\":\"next\",\"build\":\"next build\",\"export\":\"next build && next export && touch out/.nojekyll\",\"start\":\"next start\",\"test\":\"echo \\\"Error: no test specified\\\" && exit 1\",\"upgrade-interactive\":\"npm-check --update\",\"lint\":\"eslint .\",\"format\":\"prettier --write \\\"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\\\"\",\"deploy\":\"gh-pages -b master -d out -r https://github.com/fewsats/fewsats.github.io.git -u \\\"fewsats <xxasasasax@xxxxxxxxxxx.xxx>\\\" -t true\"},\"keywords\":[],\"author\":\"\",\"license\":\"MIT\",\"dependencies\":{\"@tailwindcss/custom-forms\":\"^0.2.1\",\"@zeit/next-css\":\"^1.0.1\",\"babel-eslint\":\"^10.0.3\",\"big.js\":\"^5.2.2\",\"clsx\":\"^1.0.4\",\"dlv\":\"^1.1.3\",\"gh-pages\":\"^2.1.1\",\"lodash.throttle\":\"^4.1.1\",\"next\":\"^9.1.4\",\"react\":\"^16.12.0\",\"react-dom\":\"^16.12.0\",\"react-ga\":\"^2.7.0\",\"react-icons\":\"^3.8.0\",\"react-tooltip\":\"^3.11.1\",\"tailwindcss\":\"^1.1.4\",\"tailwindcss-transitions\":\"^2.1.0\"},\"devDependencies\":{\"eslint\":\"^6.7.2\",\"eslint-config-prettier\":\"^6.7.0\",\"eslint-plugin-prettier\":\"^3.1.1\",\"eslint-plugin-react\":\"^7.17.0\",\"eslint-plugin-react-hooks\":\"^2.3.0\",\"husky\":\"^3.1.0\",\"lint-staged\":\"^9.5.0\",\"npm-check\":\"^5.9.0\",\"optimize-css-assets-webpack-plugin\":\"^5.0.3\",\"prettier\":\"^1.19.1\"},\"husky\":{\"hooks\":{\"pre-commit\":\"lint-staged\"}},\"lint-staged\":{\"*.+(js|jsx)\":[\"eslint --fix\",\"git add\"],\"*.+(json|css|md)\":[\"prettier --write\",\"git add\"]}}");
+module.exports = JSON.parse("{\"name\":\"trading\",\"version\":\"1.0.0\",\"description\":\"\",\"main\":\"index.js\",\"repository\":\"https://github.com/fewsats/trading-tools.git\",\"scripts\":{\"dev\":\"next\",\"build\":\"next build\",\"export\":\"next build && next export && touch out/.nojekyll\",\"start\":\"next start\",\"test\":\"echo \\\"Error: no test specified\\\" && exit 1\",\"upgrade-interactive\":\"npm-check --update\",\"lint\":\"eslint .\",\"format\":\"prettier --write \\\"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\\\"\",\"deploy\":\"gh-pages -b master -d out -r https://github.com/fewsats/fewsats.github.io.git -u \\\"fewsats <xxasasasax@xxxxxxxxxxx.xxx>\\\" -t true\"},\"keywords\":[],\"author\":\"\",\"license\":\"MIT\",\"dependencies\":{\"@tailwindcss/custom-forms\":\"^0.2.1\",\"@zeit/next-css\":\"^1.0.1\",\"babel-eslint\":\"^10.0.3\",\"big.js\":\"^5.2.2\",\"clsx\":\"^1.0.4\",\"dlv\":\"^1.1.3\",\"gh-pages\":\"^2.1.1\",\"lodash.throttle\":\"^4.1.1\",\"next\":\"^9.1.4\",\"react\":\"^16.12.0\",\"react-dom\":\"^16.12.0\",\"react-ga\":\"^2.7.0\",\"react-icons\":\"^3.8.0\",\"react-tooltip\":\"^3.11.1\",\"tailwindcss\":\"^1.1.4\",\"tailwindcss-transitions\":\"^2.1.0\"},\"devDependencies\":{\"eslint\":\"^6.7.2\",\"eslint-config-prettier\":\"^6.7.0\",\"eslint-plugin-jsx-a11y\":\"^6.2.3\",\"eslint-plugin-prettier\":\"^3.1.1\",\"eslint-plugin-react\":\"^7.17.0\",\"eslint-plugin-react-hooks\":\"^2.3.0\",\"husky\":\"^3.1.0\",\"lint-staged\":\"^9.5.0\",\"npm-check\":\"^5.9.0\",\"optimize-css-assets-webpack-plugin\":\"^5.0.3\",\"prettier\":\"^1.19.1\"},\"husky\":{\"hooks\":{\"pre-commit\":\"lint-staged\"}},\"lint-staged\":{\"*.+(js|jsx)\":[\"eslint --fix\",\"git add\"],\"*.+(json|css|md)\":[\"prettier --write\",\"git add\"]}}");
 
 /***/ }),
 
