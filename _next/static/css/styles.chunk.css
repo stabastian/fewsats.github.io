@@ -6130,14 +6130,14 @@ video {
   --colors-text: #000000;
   --colors-background: #ffffff;
   --colors-muted: #f6f6f6;
-  --colors-highlight: #efeffe;
+  --colors-highlight: #888888;
   --colors-lgray: #777777;
   --colors-accent: #d23669;
 }
 
 .dark {
   --colors-text: #ffffff;
-  --colors-background: #282c35;
+  --colors-background: #262626;
   --colors-muted: hsla(230, 20%, 0%, 20%);
   --colors-highlight: hsl(260, 20%, 40%);
   --colors-lgray: hsl(210, 50%, 60%);

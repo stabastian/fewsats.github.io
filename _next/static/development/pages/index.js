@@ -13925,7 +13925,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!******************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Faarnod01%2Fcode%2Ftrading-tools%2Fpages%2Findex.js ***!
   \******************************************************************************************************************************/
@@ -13948,5 +13948,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

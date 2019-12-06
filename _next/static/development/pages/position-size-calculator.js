@@ -82,14 +82,14 @@ var CalculatorRow = function CalculatorRow(_ref) {
     },
     __self: this
   }, __jsx("div", {
-    className: "text-xs md:text-sm font-light p-1",
+    className: "text-xs font-light p-1",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
   }, tip)), __jsx("div", {
-    className: "text-sm md:text-base",
+    className: "text-sm",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
@@ -103,7 +103,7 @@ var CalculatorRow = function CalculatorRow(_ref) {
     },
     __self: this
   }, __jsx("input", Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])('w-full text-right bg-background', variant === 'long' && 'text-green font-bold', variant === 'short' && 'text-red font-bold', !variant && (readOnly ? 'text-lgray ' : 'text-text')),
+    className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])('text-sm w-full text-right bg-background', variant === 'long' && 'text-green font-bold', variant === 'short' && 'text-red font-bold', !variant && (readOnly ? 'text-lgray ' : 'text-text')),
     type: "number",
     name: name,
     onChange: onChange,
