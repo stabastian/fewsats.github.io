@@ -6132,7 +6132,7 @@ video {
   --colors-muted: #f6f6f6;
   --colors-highlight: #efeffe;
   --colors-lgray: #777777;
-  --colors-accent: #D23669;
+  --colors-accent: #d23669;
 }
 
 .dark {
@@ -6140,8 +6140,8 @@ video {
   --colors-background: #282c35;
   --colors-muted: hsla(230, 20%, 0%, 20%);
   --colors-highlight: hsl(260, 20%, 40%);
-  --colors-lgray: hsl(210,50%,60% );
-  --colors-accent: #FFA7C4;
+  --colors-lgray: hsl(210, 50%, 60%);
+  --colors-accent: #ffa7c4;
 }
 
 @media (min-width: 640px) {

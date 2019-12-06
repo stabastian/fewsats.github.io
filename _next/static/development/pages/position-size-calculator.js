@@ -605,8 +605,9 @@ function (_Component) {
           lineNumber: 183
         },
         __self: this
-      }, "BTC tip: "), __jsx("span", {
-        className: "font-medium text-lgray",
+      }, "BTC tip: "), __jsx("a", {
+        href: "bitcoin:36sBfcHd1FdLvynCuh6n5SBzCVAnzb5eeT",
+        className: "hover:underline font-medium text-lgray",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 184
@@ -616,13 +617,13 @@ function (_Component) {
         className: "py-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188
+          lineNumber: 190
         },
         __self: this
       }, __jsx("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189
+          lineNumber: 191
         },
         __self: this
       }, "with \u2764\uFE0Fby"), __jsx("a", {
@@ -630,7 +631,7 @@ function (_Component) {
         href: "https://twitter.com/fewsats",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 192
         },
         __self: this
       }, "@fewsats"))));
@@ -13849,7 +13850,7 @@ function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fposition-size-calculator&absolutePagePath=%2FUsers%2Faarnod01%2Fcode%2Ftrading-tools%2Fpages%2Fposition-size-calculator.js ***!
   \*************************************************************************************************************************************************************************/
@@ -13872,5 +13873,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=position-size-calculator.js.map
