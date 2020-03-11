@@ -438,36 +438,29 @@ var Main = /*#__PURE__*/function (_Component) {
           lineNumber: 183
         },
         __self: this
-      }, "BTC tip: "), __jsx("a", {
-        href: "bitcoin:36sBfcHd1FdLvynCuh6n5SBzCVAnzb5eeT",
-        className: "hover:underline font-medium text-lgray",
+      }, "\u2764\uFE0F Consider supporting me by using my referrals \u2764\uFE0F"), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 184
         },
         __self: this
-      }, "36sBfcHd1FdLvynCuh6n5SBzCVAnzb5eeT")), __jsx("div", {
-        className: "py-2",
+      }, __jsx("a", {
+        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
+        href: "https://primexbt.com?signup=139224",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 185
         },
         __self: this
-      }, __jsx("span", {
+      }, "PrimeXBT"), "-", __jsx("a", {
+        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
+        href: "https://www.bitmex.com/register/0Cv8Uv",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 191
         },
         __self: this
-      }, "with \u2764\uFE0Fby"), __jsx("a", {
-        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
-        href: "https://twitter.com/fewsats",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 192
-        },
-        __self: this
-      }, "@fewsats"))));
+      }, "BitMEX")))));
     }
   }]);
 

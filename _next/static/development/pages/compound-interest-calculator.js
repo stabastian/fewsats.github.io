@@ -576,36 +576,29 @@ var Main = /*#__PURE__*/function (_Component) {
           lineNumber: 183
         },
         __self: this
-      }, "BTC tip: "), __jsx("a", {
-        href: "bitcoin:36sBfcHd1FdLvynCuh6n5SBzCVAnzb5eeT",
-        className: "hover:underline font-medium text-lgray",
+      }, "\u2764\uFE0F Consider supporting me by using my referrals \u2764\uFE0F"), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 184
         },
         __self: this
-      }, "36sBfcHd1FdLvynCuh6n5SBzCVAnzb5eeT")), __jsx("div", {
-        className: "py-2",
+      }, __jsx("a", {
+        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
+        href: "https://primexbt.com?signup=139224",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 185
         },
         __self: this
-      }, __jsx("span", {
+      }, "PrimeXBT"), "-", __jsx("a", {
+        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
+        href: "https://www.bitmex.com/register/0Cv8Uv",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 191
         },
         __self: this
-      }, "with \u2764\uFE0Fby"), __jsx("a", {
-        className: "hover:no-underline px-2 visited:text-accent underline text-accent transition-all",
-        href: "https://twitter.com/fewsats",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 192
-        },
-        __self: this
-      }, "@fewsats"))));
+      }, "BitMEX")))));
     }
   }]);
 
@@ -11001,8 +10994,10 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
             risk = form.risk,
             rweek = form.rweek,
             nweeks = form.nweeks;
+        var riskAmount = new big_js__WEBPACK_IMPORTED_MODULE_9___default.a(capital).times(new big_js__WEBPACK_IMPORTED_MODULE_9___default.a(risk).div(100)).toFixed(8);
         var value = new big_js__WEBPACK_IMPORTED_MODULE_9___default.a(capital).times(Math.pow(1 + rweek * risk / 100, nweeks)).toFixed(2);
         result.value = numeral__WEBPACK_IMPORTED_MODULE_12___default()(value).format('0,0');
+        result.riskAmount = riskAmount;
         return result;
       } catch (err) {
         console.error('ouch!', err.message);
@@ -11019,53 +11014,54 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
           nweeks = form.nweeks;
 
       var _this$compute = this.compute(),
-          value = _this$compute.value;
+          value = _this$compute.value,
+          riskAmount = _this$compute.riskAmount;
 
       return __jsx(_layouts_main__WEBPACK_IMPORTED_MODULE_10__["default"], {
         title: "Compound Interest Calculator",
         description: "Calculate R per week",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 56
         },
         __self: this
       }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 59
         },
         __self: this
       }, __jsx("h1", {
         className: "text-2xl text-left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 60
         },
         __self: this
       }, "Compound interest calculator"), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 61
         },
         __self: this
       }, __jsx("div", {
         className: "mt-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 62
         },
         __self: this
       }, __jsx("table", {
         className: "border-l-2 shadow-xl table-fixed w-full mt-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 63
         },
         __self: this
       }, __jsx("tbody", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 64
         },
         __self: this
       }, __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11075,7 +11071,7 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 65
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11085,7 +11081,7 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 71
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11095,7 +11091,7 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 77
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11105,7 +11101,17 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 83
+        },
+        __self: this
+      }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        label: "Risk amount",
+        type: "number",
+        value: riskAmount,
+        readOnly: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
         },
         __self: this
       }), __jsx(_components_calculator_row__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11116,7 +11122,7 @@ var CompoundInterestCalculator = /*#__PURE__*/function (_Component) {
         readOnly: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 95
         },
         __self: this
       })))))));
