@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a,b){return {"/":[a],"/compound-interest-calculator":[a,b],"/index":[a],"/position-size-calculator":[a,b]}}("static\u002Fchunks\u002Fa3160efc3dee0f0f80d91a2161b6609e90dfea38.82686655eb52c3f0cd76.js","static\u002Fchunks\u002F5326e97020e3121d2152341dcd93c6dad795523e.cfae3d48ef41e788ba34.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
