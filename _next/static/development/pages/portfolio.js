@@ -8303,6 +8303,8 @@ var Portfolio = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var _this$state = this.state,
           btcPrice = _this$state.btcPrice,
           eurRate = _this$state.eurRate,
@@ -8310,124 +8312,142 @@ var Portfolio = /*#__PURE__*/function (_Component) {
       return __jsx(_layouts_main__WEBPACK_IMPORTED_MODULE_13__["default"], {
         title: "Portfolio",
         description: "Position Size Calculator for Bitcoin and Altcoins",
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
+          lineNumber: 25,
+          columnNumber: 7
+        }
       }, __jsx("div", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
+          lineNumber: 28,
+          columnNumber: 9
+        }
       }, __jsx("h1", {
         className: "text-2xl text-left",
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
+          lineNumber: 29,
+          columnNumber: 11
+        }
       }, "Portfolio"), __jsx("div", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
+          lineNumber: 30,
+          columnNumber: 11
+        }
       }, "Construct a link following the pattern:", __jsx("br", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
+          lineNumber: 32,
+          columnNumber: 13
+        }
       }), __jsx("a", {
         className: "hover:no-underline visited:text-accent underline text-accent transition-all",
-        href: "https://fewsats.github.io/portfolio=portfolio1=10&portfolio2=1",
+        href: "https://fewsats.github.io/portfolio?portfolio1=10&portfolio2=1",
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, "https://fewsats.github.io/portfolio=portfolio1=10&portfolio2=1")), __jsx("div", {
+          lineNumber: 33,
+          columnNumber: 13
+        }
+      }, "https://fewsats.github.io/portfolio?portfolio1=10&portfolio2=1")), __jsx("div", {
         className: "mt-8",
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
+          lineNumber: 39,
+          columnNumber: 11
+        }
       }, __jsx("table", {
         className: "text-left shadow-xl table-fixed w-full mt-2",
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
+          lineNumber: 40,
+          columnNumber: 13
+        }
       }, __jsx("thead", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
+          lineNumber: 41,
+          columnNumber: 15
+        }
       }, __jsx("tr", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
+          lineNumber: 42,
+          columnNumber: 17
+        }
       }, __jsx("th", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
+          lineNumber: 43,
+          columnNumber: 19
+        }
       }, "Portfolio"), __jsx("th", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
+          lineNumber: 44,
+          columnNumber: 19
+        }
       }, "$"), __jsx("th", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
+          lineNumber: 45,
+          columnNumber: 19
+        }
       }, "\u20AC"))), __jsx("tbody", {
+        __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
+          lineNumber: 48,
+          columnNumber: 15
+        }
       }, btcPrice && Object.keys(portfolios).map(function (el) {
         var usd = new big_js__WEBPACK_IMPORTED_MODULE_10___default.a(portfolios[el]).times(new big_js__WEBPACK_IMPORTED_MODULE_10___default.a(btcPrice)).toFixed(2);
         return __jsx("tr", {
           key: el,
+          __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
-          },
-          __self: this
+            lineNumber: 55,
+            columnNumber: 23
+          }
         }, __jsx("td", {
           className: "bg-muted font-semibold text-text font-semi-bold truncate p-1 w-2/3 border border-highlight",
+          __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
-          },
-          __self: this
+            lineNumber: 56,
+            columnNumber: 25
+          }
         }, el), __jsx("td", {
           className: "bg-muted font-semibold text-text font-semi-bold truncate p-1 w-2/3 border border-highlight",
+          __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
-          },
-          __self: this
+            lineNumber: 59,
+            columnNumber: 25
+          }
         }, accounting__WEBPACK_IMPORTED_MODULE_12___default.a.formatMoney(usd, '$', 0)), __jsx("td", {
           className: "bg-muted font-semibold text-text font-semi-bold truncate p-1 w-2/3 border border-highlight",
+          __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
-          },
-          __self: this
+            lineNumber: 62,
+            columnNumber: 25
+          }
         }, accounting__WEBPACK_IMPORTED_MODULE_12___default.a.formatMoney(new big_js__WEBPACK_IMPORTED_MODULE_10___default.a(usd).div(eurRate), '€', 0)));
       }))))));
     }
